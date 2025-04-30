@@ -26,6 +26,7 @@ python train_model.py
 ```
 
 - The trained model will be saved as `watermark_detector_model.h5`.
+- **Note:** The current model was trained using 700 images. For better performance, you should use more videos and images to generate a larger and more diverse training dataset.
 
 ## 4. Run the Flask App
 
@@ -34,6 +35,26 @@ Start the Flask application to use the trained model:
 ```bash
 python app.py
 ```
+
+## 5. Run the React Native App
+
+To run the React Native app on an Android virtual machine using Android Studio:
+
+1. **Start a Virtual Device:**
+   - Open Android Studio.
+   - Launch a new virtual machine (Android Emulator) from the AVD Manager.
+
+2. **Run the React Native App:**
+   - In your project directory, run:
+     ```bash
+     npm run android
+     ```
+   - Make sure you have Java installed. This setup uses **Java 17.0.2 2022-01-18 LTS**.
+
+## 6. Get Output Videos
+
+To add videos to the React Native app in the virtual device, visit the following Google Drive link:  
+[https://drive.google.com/drive/folders/1XqoYKim8H9gOLabMlHKhmW6F_NTje-8O?usp=sharing](https://drive.google.com/drive/folders/1XqoYKim8H9gOLabMlHKhmW6F_NTje-8O?usp=sharing)
 
 
 
