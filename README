@@ -1,0 +1,41 @@
+# How to Use
+
+## 1. Prepare Your Data
+
+- **Backgrounds:**  
+  Place as many background images as possible in the `backgrounds/` folder.
+
+- **Videos:**  
+  Place videos containing the desired watermark in the `videos/` folder.
+
+## 2. Generate Training Data
+
+Run the following script to generate training data:
+```bash
+python generate_training_data.py
+```
+
+- The generated training data will appear in the `training_data/` folder.
+
+## 3. Train the Model
+
+Train the watermark detection model by running:
+
+```bash
+python train_model.py
+```
+
+- The trained model will be saved as `watermark_detector_model.h5`.
+
+## 4. Run the Flask App
+
+Start the Flask application to use the trained model:
+
+```bash
+python app.py
+```
+
+
+
+
+
